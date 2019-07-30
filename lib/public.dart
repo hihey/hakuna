@@ -25,6 +25,7 @@ export 'package:hakuna/util/event_bus.dart';
 export 'package:hakuna/util/toast.dart';
 export 'package:hakuna/util/tag_util.dart';
 export 'package:hakuna/util/utility.dart';
+export 'package:hakuna/util/search_delegate.dart';
 
 export 'package:hakuna/widget/movie_cover_image.dart';
 export 'package:hakuna/widget/web_view_scene.dart';

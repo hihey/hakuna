@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:chewie/chewie.dart';
 import 'package:video_player/video_player.dart';
 
-
 class MovieVideoPlay extends StatefulWidget {
   final String url;
 
@@ -17,7 +16,7 @@ class _MovieVideoPlayState extends State<MovieVideoPlay> {
   ChewieController chewieController;
 
   @override
-  void initState() { 
+  void initState() {
     super.initState();
     videoPlayerController = VideoPlayerController.network(this.widget.url);
     chewieController = ChewieController(
@@ -53,11 +52,11 @@ class _MovieVideoPlayState extends State<MovieVideoPlay> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-            color: Colors.black
+          color: Colors.black
         ),
         constraints: BoxConstraints.expand(
-            height: MediaQuery.of(context).size.height,
-          ),
+          height: MediaQuery.of(context).size.height,
+        ),
         child: Chewie(
           controller: chewieController
         )

@@ -38,7 +38,9 @@ class MovieListItem extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.favorite_border),
               color: Color(0xFFF7AC3A),
-              onPressed: () {},
+              onPressed: () {
+                Toast.show("暂无内容");
+              },
             ),
             Text('收藏', style: TextStyle(color: Color(0xFFF7AC3A)))
           ],
@@ -58,7 +60,7 @@ class MovieListItem extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        //AppNavigator.pushMovieDetail(context, movie);
+        AppNavigator.pushMovieDetail(context, movie);
       },
       child: Container(
         padding: EdgeInsets.fromLTRB(spaceWidth, spaceWidth, 0, spaceWidth),

@@ -27,6 +27,7 @@ class _HomeSceneState extends State<HomeScene> {
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),
+              onPressed:() => showSearch(context:context, delegate: SearchBarDelegate()),
             ),
           ],
         ),
