@@ -31,35 +31,23 @@ class _MySceneState extends State<MyScene> with RouteAware{
             children: <Widget>[
               _buildHeader(),
               _buildItem('assets/images/icon_github.png', '项目地址', _openGithub),
-              _buildItem('assets/images/icon_qq.png', 'Flutter 技术群', _copyQQNumber),
               _buildItem('assets/images/icon_wechat.png', '我的微信号', _copyWechatNumber),
-              _buildItem('assets/images/icon_account.png', '我的公众号', _copyOfficialAccountNumber),
-              _buildItem('assets/images/icon_API.png', 'API 文档', _openApi),
+              _buildItem('assets/images/icon_API.png', '使用说明', _openApi),
             ],
           )),
     );
   }
 
   _openGithub() {
-    AppNavigator.push(context, WebViewScene(url: 'https://github.com/Mayandev/morec',title: 'Morec',));
+    AppNavigator.push(context, WebViewScene(url: 'https://github.com/hihey/hakuna',title: 'hihey',));
   }
 
   _openApi() {
-    AppNavigator.push(context, WebViewScene(url: 'https://github.com/Mayandev/morec/blob/master/API.md',title: 'Api',));
-  }
-
-  _copyQQNumber() {
-    Clipboard.setData(ClipboardData(text:'693338726'));
-    Toast.show('已复制 QQ 群号');
-  }
-
-  _copyOfficialAccountNumber() {
-    Clipboard.setData(ClipboardData(text:'fever_code'));
-    Toast.show('已复制微信公众号');
+    AppNavigator.push(context, WebViewScene(url: 'https://github.com/hihey/hakuna/blob/master/README.md',title: 'README',));
   }
 
   _copyWechatNumber() {
-    Clipboard.setData(ClipboardData(text:'zmy1349571206'));
+    Clipboard.setData(ClipboardData(text:'1397009898'));
     Toast.show('已复制微信号');
   }
 
