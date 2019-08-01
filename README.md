@@ -4,7 +4,7 @@ hakuna matata
 
 常见问题：<br>
 ①播放视频请关注权限问题，详见 https://github.com/flutter/plugins/tree/master/packages/video_player
-安装video_player插件的问题
+<br>安装video_player插件的问题
 ### iOS
 Warning: The video player is not functional on iOS simulators. An iOS device must be used during development/testing.
 Add the following entry to your _Info.plist_ file, located in `<project root>/ios/Runner/Info.plist`:
@@ -19,7 +19,7 @@ This entry allows your app to access video files by URL.
 
 ### Android
 Ensure the following permission is present in your Android Manifest file, located in 
-`<project root>/android/app/src/main/AndroidManifest.xml`:
+<br>`<project root>/android/app/src/main/AndroidManifest.xml`:
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
