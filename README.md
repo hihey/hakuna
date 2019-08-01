@@ -2,18 +2,36 @@
 
 hakuna matata
 
-## Getting Started
+常见问题：<br>
+①播放视频请关注权限问题，详见 https://github.com/flutter/plugins/tree/master/packages/video_player
+<br>安装video_player插件的问题
+### iOS
+Warning: The video player is not functional on iOS simulators. An iOS device must be used during development/testing.
+Add the following entry to your _Info.plist_ file, located in `<project root>/ios/Runner/Info.plist`:
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSAllowsArbitraryLoads</key>
+  <true/>
+</dict>
+```
+This entry allows your app to access video files by URL.
 
-This project is a starting point for a Flutter application.
+### Android
+Ensure the following permission is present in your Android Manifest file, located in 
+<br>`<project root>/android/app/src/main/AndroidManifest.xml`:
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+The Flutter project template adds it, so it may already be there.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
 
 （该项目是参考MayanDev的项目练习所用）
 原作者地址 https://blog.csdn.net/qq_37954086/article/details/88955584
