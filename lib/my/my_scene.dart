@@ -123,7 +123,7 @@ class _MySceneState extends State<MyScene> with RouteAware{
                     SizedBox(
                       height: 10,
                     ),
-                    Text('MayanDev',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: AppColor.white,))
+                    Text('hihey',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: AppColor.white,))
                   ],
                 )),
           ),

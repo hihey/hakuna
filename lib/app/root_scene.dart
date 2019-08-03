@@ -42,9 +42,9 @@ class _RootSceneState extends State<RootScene> {
     return Scaffold(
       body: IndexedStack(
         children: <Widget>[
-          CollectPage(),
           HomeScene(),
           FindPage(),
+          CollectPage(),
           MyScene()
         ],
         index: _tabIndex,
@@ -55,8 +55,8 @@ class _RootSceneState extends State<RootScene> {
         border: Border(top: BorderSide.none),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: getTabIcon(0),title: Text('首页')),
-          BottomNavigationBarItem(icon: getTabIcon(1),title: Text("电影")),
-          BottomNavigationBarItem(icon: getTabIcon(2),title: Text("资讯")),
+          BottomNavigationBarItem(icon: getTabIcon(1),title: Text("资讯")),
+          BottomNavigationBarItem(icon: getTabIcon(2),title: Text("收藏")),
           BottomNavigationBarItem(icon: getTabIcon(3),title: Text("我的"))
         ],
         currentIndex: _tabIndex,
